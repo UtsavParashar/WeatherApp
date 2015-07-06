@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/location_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="29dp"
+        android:text="@string/button_location" />
+
+    <EditText
+        android:id="@+id/location_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/location_button"
+        android:layout_marginLeft="33dp"
+        android:layout_toRightOf="@+id/location_button"
+        android:hint="@string/location_editText_hint"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/weather_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/location_button"
+        android:layout_marginTop="26dp"
+        android:layout_toRightOf="@+id/location_button"
+        android:text="@string/weather_button" />
+
+    <TextView
+        android:id="@+id/country_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/location_button"
+        android:layout_alignRight="@+id/location_button"
+        android:layout_below="@+id/weather_button"
+        android:layout_marginTop="22dp"
+        android:text="@string/country_textView"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/country_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/country_textView"
+        android:layout_alignBottom="@+id/country_textView"
+        android:layout_alignLeft="@+id/location_editText"
+        android:hint="@string/country_editText"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/temperature_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/country_textView"
+        android:layout_below="@+id/country_editText"
+        android:layout_marginTop="51dp"
+        android:text="@string/temperature_textView"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/temperature_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/temperature_textView"
+        android:layout_alignBottom="@+id/temperature_textView"
+        android:layout_alignLeft="@+id/country_editText"
+        android:hint="@string/temperature_editText"
+        android:ems="10" />
+
+</RelativeLayout>
